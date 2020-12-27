@@ -1,0 +1,20 @@
+<link href="message.css" rel="stylesheet" id="bootstrap-css">
+<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bPopup/0.11.0/jquery.bpopup.min.js"></script>
+<script>
+    $( document ).ready(function() {
+    $('#popup_this').bPopup();
+});
+</script>
+<div class="popup popup--icon -success js_success-popup popup--visible" id = "popup_this">
+  <div class="popup__background"></div>
+  <div class="popup__content">
+    <h3 class="popup__content__title">
+      Successful Registration!
+    </h3>
+    <p>Your account has been successfully registered!</p>
+    <p>
+      <button class="button b-close button--success" data-for="js_success-popup"><span>CLOSE</span></button>
+    </p>
+  </div>
+</div>

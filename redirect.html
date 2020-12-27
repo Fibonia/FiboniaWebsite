@@ -1,0 +1,256 @@
+<head>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.2.3/animate.min.css">
+<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+<title>App | Fibonia</title>
+<link rel="icon" type="image/png" href="logo.png">
+</head>
+<div style="z-index:1000;" class="land" id="top">
+    <div class="intro"><img style="border-radius:13%" class="wow animated fadeInUp" src="https://i.imgur.com/SdOFtdE.png" data-wow-delay=".5s" />&nbsp;
+        <div class="logo wow animated fadeInUp" data-wow-delay="1s">
+            <h3>A Tutoring app for students across the world</h3>
+        </div>
+        <div class="download wow animated fadeInUp" data-wow-delay="1.5s"><a class="button" href="https://apps.apple.com/us/app/fibonia/id1529005300?mt=8&ign-mpt=uo%3D4"><i class="fa fa-apple"></i>&nbsp; Download</a></div>
+    </div>
+</div>
+
+<div class="waveWrapper waveAnimation">
+  <div class="waveWrapperInner bgTop">
+    <div class="wave waveTop" style="background-image: url('https://front-end-noobs.com/jecko/img/wave-top.png')"></div>
+  </div>
+  <div class="waveWrapperInner bgMiddle">
+    <div class="wave waveMiddle" style="background-image: url('https://front-end-noobs.com/jecko/img/wave-mid.png')"></div>
+  </div>
+  <div class="waveWrapperInner bgBottom">
+    <div class="wave waveBottom" style="background-image: url('https://front-end-noobs.com/jecko/img/wave-bot.png')"></div>
+  </div>
+</div>
+<style>
+html, body {margin: 0; height: 100%; overflow: hidden}
+@keyframes move_wave {
+    0% {
+        transform: translateX(0) translateZ(0) scaleY(1)
+    }
+    50% {
+        transform: translateX(-25%) translateZ(0) scaleY(0.55)
+    }
+    100% {
+        transform: translateX(-50%) translateZ(0) scaleY(1)
+    }
+}
+.waveWrapper {
+    overflow: hidden;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    margin: auto;
+}
+.waveWrapperInner {
+    position: absolute;
+    width: 100%;
+    overflow: hidden;
+    height: 100%;
+    bottom: -1px;
+    background-image: linear-gradient(to top, royalblue 20%, #27273c 80%);
+}
+.bgTop {
+    z-index: 15;
+    opacity: 0.5;
+}
+.bgMiddle {
+    z-index: 10;
+    opacity: 0.75;
+}
+.bgBottom {
+    z-index: 5;
+}
+.wave {
+    position: absolute;
+    left: 0;
+    width: 200%;
+    height: 100%;
+    background-repeat: repeat no-repeat;
+    background-position: 0 bottom;
+    transform-origin: center bottom;
+}
+.waveTop {
+    background-size: 50% 100px;
+}
+.waveAnimation .waveTop {
+  animation: move-wave 3s;
+   -webkit-animation: move-wave 3s;
+   -webkit-animation-delay: 1s;
+   animation-delay: 1s;
+}
+.waveMiddle {
+    background-size: 50% 120px;
+}
+.waveAnimation .waveMiddle {
+    animation: move_wave 10s linear infinite;
+}
+.waveBottom {
+    background-size: 50% 100px;
+}
+.waveAnimation .waveBottom {
+    animation: move_wave 15s linear infinite;
+}
+</style>
+
+<style>
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,600);
+ body {
+	 font-family: Open Sans;
+	 padding: 0;
+	 margin: 0;
+	 height: 100%;
+	 width: 100%;
+}
+ .nav {
+	 display: block;
+	 margin: 0 auto;
+	 text-align: center;
+	 padding-top: 2em;
+}
+ .nav li {
+	 display: inline-block;
+	 font-size: 1em;
+	 font-family: Open Sans;
+}
+ .nav li a {
+	 cursor: pointer;
+	 color: #fff;
+	 padding: 0.5em 1.5em 0.5em 1em;
+	 font-weight: 100;
+}
+ .nav li a:hover, .nav li a:focus {
+	 background: none;
+}
+ .nav li:nth-child(1), .nav li:nth-child(2) {
+	 border-right: 1px solid rgba(255, 255, 255, 0.5);
+}
+ .land {
+	 position: relative;
+	 height: 100vh;
+	 width: 100%;
+	 background: rgb(0,0,0,0);
+}
+ .land .intro {
+	 height: auto;
+	 width: auto;
+	 text-align: center;
+	 display: block;
+	 position: relative;
+	 top: 47%;
+	 transform: translateY(-50%);
+}
+ .land .intro img {
+	 height: 10em;
+	 width: 10em;
+}
+ .land .intro .logo {
+	 height: 5.5em;
+	 border-left: 1px solid #fff;
+	 display: inline-block;
+}
+ .land .intro .logo h3 {
+	 padding-left: 0.65em;
+	 font-size:200% !important;
+	 display: inline-block;
+	 font-family: Open Sans;
+	 font-weight: 100;
+	 color: #fff;
+}
+ .land .intro a {
+	 display: inline-block;
+}
+ #about {
+	 padding: 3em 4em;
+	 margin-bottom: 5em;
+}
+ #about h1 {
+	 font-weight: 200;
+}
+ #about h4 {
+	 font-weight: 300;
+}
+ .parts {
+	 background: rgba(255, 255, 255, .5);
+	 padding: 2em;
+	 margin-top: 2em;
+}
+ .s-img {
+	 background-size: cover;
+}
+ .screenshot img {
+	 display: block;
+	 height: 30em;
+	 width: auto;
+	 text-align: center;
+	 margin: -5em auto;
+}
+ @media (max-width: 500px) {
+	 .screenshot img {
+		 height: 20em;
+	}
+}
+ #download {
+	 padding: 4em;
+	 margin-top: 4em;
+}
+ #download h1 {
+	 font-weight: 200;
+}
+ #download h4 {
+	 font-weight: 300;
+}
+ #download .d-logo {
+	 width: 100%;
+	 margin: 0 auto;
+	 display: block;
+	 text-align: center;
+	 margin-top: 2em;
+}
+ #download .d-logo .logo {
+	 display: inline-block;
+	 padding: 0 0.75em;
+}
+ #download .d-logo .logo img {
+	 height: 5em;
+	 width: auto;
+}
+ .button {
+	 padding: 0.85em 1.5em;
+	 border: solid thin white;
+	 text-transform: uppercase;
+	 background: transparent;
+	 color: white;
+	 transition: all 500ms ease;
+	 margin: 0 1em;
+	 font-weight: 200;
+}
+ .button:hover, .button:focus {
+	 background: #fff;
+	 color: #039be5;
+	 cursor: pointer;
+	 text-decoration: none;
+}
+ footer {
+	 background: #039be5;
+	 padding: 0.5em;
+	 color: #fff;
+}
+</style>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></src>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></src>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-localScroll/1.4.0/jquery.localScroll.min.js"></src>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-scrollTo/2.1.2/jquery.scrollTo.min.js"></src>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/parallax.js/1.3.2/parallax.min.js"></src>
+<script>
+$('.s-img').parallax({imageSrc: 'https://images.unsplash.com/photo-1437419764061-2473afe69fc2?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&s=76fba3bdb1e04cb26a02000be2fe7740'});
+// wow
+new WOW().init();
+// local
+$('html, body').localScroll({duration:800});
+</script>

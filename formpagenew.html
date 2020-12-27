@@ -1,0 +1,69 @@
+<!DOCTYPE html> <html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Contact Form HTML/CSS Template - reusable form</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+        <link rel="stylesheet" href="form.css" >
+        <script src="form.js"></script>
+    </head>
+    <body >
+        <div class="container">
+            <div id="form-main">
+                <div id="form-div">
+                    <form class="montform" id="reused_form" >
+                        <p class="name">
+                            <input name="name" type="text" class="feedback-input" required placeholder="Name" id="name" />
+                        </p>
+                        <p class="email">
+                            <input name="email" type="email" required class="feedback-input" id="email" placeholder="Email" />
+                        </p>
+                        <p class="text">
+                            <textarea name="message" class="feedback-input" id="comment" placeholder="Message"></textarea>
+                        </p>
+                        <div class="submit">
+                            <button type="submit" class="button-blue">SUBMIT</button>
+                            <div class="ease"></div>
+                        </div>
+                    </form>
+                    <div id="error_message" style="width:100%; height:100%; display:none; ">
+                        <h4>
+                            Error
+                        </h4>
+                        Sorry there was an error sending your form. 
+                    </div>
+                    <div id="success_message" style="width:100%; height:100%; display:none; "> <h2>Success! Your Message was Sent Successfully.</h2> </div>
+                </div>
+            </div>
+        </div>
+    
+
+<nav role="navigation">
+  <div id="menuToggle">
+    <input type="checkbox" />
+    <span></span>
+    <span></span>
+    <span></span>
+    <ul id="menu">
+      <a href="home.php"><li>Home</li></a>
+      <a href="offersnew.php"><li>Top Offers</li></a>
+      <a href="aboutusnew.php"><li>About</li></a>
+      <a href="contactusnew.php"><li>Contact</li></a>
+      <a href="newsletternew.php"><li>Newsletters</li></a>
+      <a href="phonepagenew.php"><li>iOS/Android</li></a>
+    </ul>
+  </div>
+</nav>
+<a href="https://www.facebook.com/yakubyan" target="_blank" class="icon-link">
+  <img src="https://translatorswithoutborders.org/wp-content/uploads/2016/01/Facebook_logo-7.png">
+</a>
+<a href="https://twitter.com/search?q=sub%202%20pewds&src=typd" target="_blank" class="icon-link icon-link--twitter">
+  <img src="https://cdn1.iconfinder.com/data/icons/logotypes/32/twitter-128.png">
+</a>
+<a href="https://www.instagram.com/abyac_999/" target="_blank" class="icon-link icon-link--ig">
+  <img src="http://assets.stickpng.com/thumbs/580b57fcd9996e24bc43c521.png">
+</a>
+<a href="logout.php" target="_self" class="icon-link sign-link" style = "color: white">Sign Out</a>
+<a href="https://www.fibonia.com/1/html/pages-profile.php" target="_self" class="icon-link profile-link" style = "color: white">Profile</a>

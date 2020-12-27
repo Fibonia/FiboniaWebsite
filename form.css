@@ -1,0 +1,649 @@
+
+
+/*General */
+html{   background-size: cover;
+  height:100%;
+}
+body
+{
+	font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+}
+
+#feedback-page{
+	text-align:center;
+}
+
+#form-main{
+	width:100%;
+	float:left;
+	padding-top:0px;
+}
+
+#form-div {
+	background-color:;
+	padding-left:5px;
+	padding-right:35px;
+	padding-top:235px;
+	padding-bottom:50px;
+	width: 50px;
+	float: left;
+	left: 30%;top:0%;
+	position: absolute;
+  margin-top:10px;
+	margin-left: -143px;
+  border-radius: 7px;
+  
+}
+
+.montform .feedback-input {
+	color:#3c3c3c;
+	font-family: Helvetica, Arial, sans-serif;
+  font-weight:500;
+	font-size: 18px;
+	border-radius: 0;
+	line-height: 22px;
+	background-color: #fbfbfb;
+	padding: 13px 13px 13px 54px;
+	margin-bottom: 15px;
+	width:100%;
+	box-sizing: border-box;
+	border: 3px solid rgba(0,0,0,0);
+}
+/*Inputs styles*/
+.montform .feedback-input:focus{
+	background: #fff;
+	border: 3px solid #FF3366;
+	color: #000000;
+	outline: none;
+  padding: 13px 13px 13px 54px;
+}
+
+
+/* Icons ---------------------------------- */
+.montform  #name{
+	background-image: url(https://cdnjs.cloudflare.com/ajax/libs/foundicons/3.0.0/svgs/fi-address-book.svg);
+	background-size: 30px 30px;
+	background-position: 11px 8px;
+	background-repeat: no-repeat;
+}
+
+.montform  #name:focus{
+	background-image: url(https://cdnjs.cloudflare.com/ajax/libs/foundicons/3.0.0/svgs/fi-address-book.svg);
+	background-size: 30px 30px;
+	background-position: 8px 5px;
+  background-position: 11px 8px;
+	background-repeat: no-repeat;
+}
+
+.montform  #email{
+	background-image: url(https://cdnjs.cloudflare.com/ajax/libs/foundicons/3.0.0/svgs/fi-mail.svg);
+	background-size: 30px 30px;
+	background-position: 11px 8px;
+	background-repeat: no-repeat;
+}
+
+.montform  #email:focus{
+	background-image: url(https://cdnjs.cloudflare.com/ajax/libs/foundicons/3.0.0/svgs/fi-mail.svg);
+	background-size: 30px 30px;
+  background-position: 11px 8px;
+	background-repeat: no-repeat;
+}
+
+.montform  #comment{
+	background-image: url(https://cdnjs.cloudflare.com/ajax/libs/foundicons/3.0.0/svgs/fi-pencil.svg);
+	background-size: 30px 30px;
+	background-position: 11px 8px;
+	background-repeat: no-repeat;
+}
+
+.montform  textarea {
+    width: 3000px;
+    height: 150px;
+    line-height: 150%;
+    resize:vertical;
+}
+
+.montform  input:hover, .montform  textarea:hover,
+.montform  input:focus, .montform  textarea:focus {
+	background-color:#fbfbfb;
+}
+
+.button-blue{
+	font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+	float:left;
+	width: 100%;
+	border: #fbfbfb solid 4px;
+	cursor:pointer;
+	background-color: #FF3366;
+	color:white;
+	font-size:24px;
+	padding-top:22px;
+	padding-bottom:22px;
+	transition: all 0.3s;
+  margin-top:-4px;
+  font-weight:700;
+}
+
+.button-blue:hover{
+	background-color: rgba(0,0,0,0);
+	color: #0493bd;
+}
+	
+.montform  .submit:hover {
+	color: #FF3366;
+}
+	
+.ease {
+	width: 0px;
+	height: 74px;
+	background-color: #fbfbfb;
+	transition: .3s ease;
+}
+
+.submit:hover .ease{
+  width:100%;
+  background-color:white;
+}
+
+/*Styles for small screens*/
+
+@media  only screen and (max-width: 580px) {
+	#form-div{
+		left: 3%;
+		margin-right: 3%;
+		width: 88%;
+		margin-left: 0;
+		padding-left: 3%;
+		padding-right: 3%;
+	}
+}
+
+
+
+* {
+        margin: 0;
+        padding: 0;
+        border: 0;
+        outline: 0;
+        font-size: 100%;
+        vertical-align: baseline;
+        background: transparent;
+    }
+
+body
+{
+  margin: -10px;
+  padding: 0;
+  color: #cdcdcd;
+  font-size: 14px;
+  font-family: "Avenir Next", "Avenir", sans-serif;
+}
+
+a
+{
+  text-decoration: none;
+  color: #000;
+  
+  transition: color 0.3s ease;
+}
+
+a:hover
+{ text-decoration: underline;
+  color: #000;
+  
+}
+
+
+#menuToggle
+{
+  display: block;
+  position: relative;
+  margin: -14px 44px;
+  top: 50px;
+  left: 50px;
+  
+  z-index: 1;
+  
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+#menuToggle input
+{
+  display: block;
+  width: 40px;
+  height: 32px;
+  position: absolute;
+  top: -7px;
+  left: -5px;
+  
+  cursor: pointer;
+  
+  opacity: 0; /* hide this */
+  z-index: 2; /* and place it over the hamburger */
+  
+  -webkit-touch-callout: none;
+}
+
+/*
+ * Just a quick hamburger
+ */
+#menuToggle span
+{
+  display: block;
+  width: 33px;
+  height: 4px;
+  margin-bottom: 5px;
+  position: relative;
+  
+  background: #fff;
+  border-radius: 3px;
+  
+  z-index: 1;
+  
+  transform-origin: 4px 0px;
+  
+  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+              background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+              opacity 0.55s ease;
+}
+
+#menuToggle span:first-child
+{
+  transform-origin: 0% 0%;
+}
+
+#menuToggle span:nth-last-child(2)
+{
+  transform-origin: 0% 100%;
+}
+
+/* 
+ * Transform all the slices of hamburger
+ * into a crossmark.
+ */
+#menuToggle input:checked ~ span
+{
+  opacity: 1;
+  transform: rotate(45deg) translate(-2px, -1px);
+  background: #fff;
+}
+
+/*
+ * But let's hide the middle one.
+ */
+#menuToggle input:checked ~ span:nth-last-child(3)
+{
+  opacity: 0;
+  transform: rotate(0deg) scale(0.2, 0.2);
+}
+
+/*
+ * Ohyeah and the last one should go the other direction
+ */
+#menuToggle input:checked ~ span:nth-last-child(2)
+{
+  transform: rotate(-45deg) translate(0, -1px);
+}
+
+/*
+ * Make this absolute positioned
+ * at the top left of the screen
+ */
+#menu
+{
+  position: absolute;
+  width: 220px;
+  height: 2000px;
+  margin: -100px 0 0 -50px;
+  padding: 50px;
+  padding-top: 125px;
+  
+  background: rgb(211,211,211);
+  opacity: 0.8;
+  list-style-type: none;
+  -webkit-font-smoothing: antialiased;
+  /* to stop flickering of text in safari */
+  
+  transform-origin: 0% 0%;
+  transform: translate(-100%, 0);
+  
+  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+}
+
+#menu li
+{
+  padding: 10px 0;
+  font-size: 22px;
+}
+
+/*
+ * And let's slide it in from the left
+ */
+#menuToggle input:checked ~ ul
+{
+  transform: none;
+}
+
+.icon-link {
+  transition: 0.4s;  
+  z-index: 100000000;
+  position: absolute;
+  right: 50px;
+  top: 44px;
+  width: 32px;
+}
+.icon-link:hover{
+    -webkit-filter: brightness(70%);
+	-moz-filter: brightness(70%);
+	-o-filter: brightness(70%);
+	-ms-filter: brightness(70%);
+	filter: brightness(70%);
+
+}
+.icon-link img {
+  width: 100%; 
+  vertical-align: top;
+}
+.icon-link--twitter {
+  left: auto;
+  right: 5px;
+  top: 44px
+}
+.icon-link--ig {
+  left: auto;
+  right: 95px;
+  top: 44px
+}
+
+.sign-link {
+  font-size:12px;
+  left: auto;
+  width: 140px;
+  right: 1665px;
+  top: 52px
+}
+.profile-link {
+  left: auto;
+  width: 100px;
+  right: 1570px;
+  top: 52px
+}
+.profile-link1 {
+  left: auto;
+  width: 100px;
+  right: 150px;
+  top: 52px
+}
+.profile-link2 {
+  left: auto;
+  width: 100px;
+  right: 270px;
+  top: 52px
+}
+.profile-link3 {
+  left: auto;
+  width: 100px;
+  right: 390px;
+  top: 52px
+}
+html,body
+{
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden; 
+    overflow-y: hidden;
+}
+#mySidenav a {
+  position: absolute;
+  right: -590px;
+  transition: 0.3s;
+  padding: 65px;
+  margin-left:auto;
+  margin-right:auto;
+  width:200px;
+  height: 1215px;
+  text-decoration: none;
+  font-size: 30px;
+  color: white;
+  border-radius: 35px 35px 0px 0px;
+}
+
+#mySidenav a:hover {
+  right: 0;
+}
+
+#about {
+  top: -260px;
+  background-color: #FF3366;
+  transform: rotate(-90deg);
+}
+
+#blog {
+  top: -30px;
+  background-color: #FF3366;
+  transform: rotate(-90deg);
+}
+
+#projects {
+  top: 220px;
+  background-color: #FF3366;
+  transform: rotate(-90deg);
+}
+
+#mySidenav1 a {
+  position: absolute;
+  transition: 0.3s;
+  right: 1690px;
+  padding: 15px;
+  width: 125px;
+  height: 10px;
+  text-decoration: none;
+  font-size: 14px;
+  font-family: "Avenir Next", "Avenir", sans-serif;
+  white-space: nowrap;
+  color: white;
+  border-radius: 14px 14px 14px 14px;
+  z-index: 100000000001;
+  
+}
+#mySidenav1 a:hover{
+    -webkit-filter: brightness(70%);
+	-moz-filter: brightness(70%);
+	-o-filter: brightness(70%);
+	-ms-filter: brightness(70%);
+	filter: brightness(70%);
+
+}
+
+#projects1 {
+  top: 46px;
+  background-color: #FF3366;
+  text-align: center;
+}
+#mySidenav2 a {
+  position: absolute;
+  right: 200px;
+  transition: 0.3s;
+  padding: 15px;
+  margin-left:auto;
+  margin-right:auto;
+  width: 71px;
+  height: 10px;
+  text-decoration: none;
+  font-size: 14px;
+  font-family: "Avenir Next", "Avenir", sans-serif;
+  white-space: nowrap;
+  color: white;
+  border-radius: 14px 14px 14px 14px;
+  z-index: 100000000001;
+}
+#mySidenav2 a:hover{
+    -webkit-filter: brightness(70%);
+	-moz-filter: brightness(70%);
+	-o-filter: brightness(70%);
+	-ms-filter: brightness(70%);
+	filter: brightness(70%);
+
+}
+#projects2 {
+  top: 46px;
+  background-color: #FF3366;
+  text-align: center;
+  vertical-align: middle;
+}
+
+#mySidenav3 a {
+  position: absolute;
+  right: -609px;
+  transition: 0.3s;
+  padding: 65px;
+  margin-left:auto;
+  margin-right:auto;
+  width:230px;
+  height: 1215px;
+  text-decoration: none;
+  font-size: 14px;
+  font-family: "Avenir Next", "Avenir", sans-serif;
+  text-decoration: none;
+  font-size: 30px;
+  color: white;
+  border-radius: 35px 35px 0px 0px;
+}
+#mySidenav3 a:hover {
+    right: 0px;
+
+}
+#mySidenav4 a {
+  position: absolute;
+  right: 320px;
+  transition: 0.3s;
+  padding: 15px;
+  margin-left:auto;
+  margin-right:auto;
+  width: 100px;
+  height: 10px;
+  text-decoration: none;
+  font-size: 14px;
+  font-family: "Avenir Next", "Avenir", sans-serif;
+  white-space: nowrap;
+  color: white;
+  border-radius: 14px 14px 14px 14px;
+  z-index: 100000000001;
+}
+#mySidenav4 a:hover {
+    -webkit-filter: brightness(70%);
+	-moz-filter: brightness(70%);
+	-o-filter: brightness(70%);
+	-ms-filter: brightness(70%);
+	filter: brightness(70%);
+
+}
+
+#mySidenav5 a {
+  position: absolute;
+  right: 470px;
+  transition: 0.3s;
+  padding: 15px;
+  margin-left:auto;
+  margin-right:auto;
+  width: 70px;
+  height: 10px;
+  text-decoration: none;
+  font-size: 14px;
+  font-family: "Avenir Next", "Avenir", sans-serif;
+  white-space: nowrap;
+  color: white;
+  border-radius: 14px 14px 14px 14px;
+  z-index: 100000000001;
+}
+#mySidenav5 a:hover {
+    -webkit-filter: brightness(70%);
+	-moz-filter: brightness(70%);
+	-o-filter: brightness(70%);
+	-ms-filter: brightness(70%);
+	filter: brightness(70%);
+
+}
+
+#mySidenav6 a {
+  position: absolute;
+  right: 590px;
+  transition: 0.3s;
+  padding: 15px;
+  margin-left:auto;
+  margin-right:auto;
+  width: 80px;
+  height: 10px;
+  text-decoration: none;
+  font-size: 14px;
+  font-family: "Avenir Next", "Avenir", sans-serif;
+  white-space: nowrap;
+  color: white;
+  border-radius: 14px 14px 14px 14px;
+  z-index: 100000000001;
+  vertical-align: middle;
+}
+#mySidenav6 a:hover {
+    -webkit-filter: brightness(70%);
+	-moz-filter: brightness(70%);
+	-o-filter: brightness(70%);
+	-ms-filter: brightness(70%);
+	filter: brightness(70%);
+
+}
+#mySidenav7 a {
+  position: absolute;
+  right: 710px;
+  transition: 0.3s;
+  padding: 15px;
+  margin-left:auto;
+  margin-right:auto;
+  width: 130px;
+  height: 10px;
+  text-decoration: none;
+  font-size: 14px;
+  font-family: "Avenir Next", "Avenir", sans-serif;
+  white-space: nowrap;
+  color: white;
+  border-radius: 14px 14px 14px 14px;
+  z-index: 100000000001;
+  vertical-align: middle;
+}
+#mySidenav7 a:hover {
+    -webkit-filter: brightness(70%);
+	-moz-filter: brightness(70%);
+	-o-filter: brightness(70%);
+	-ms-filter: brightness(70%);
+	filter: brightness(70%);
+
+}
+
+#mySidenav8 a {
+  position: absolute;
+  right: 880px;
+  transition: 0.3s;
+  padding: 15px;
+  margin-left:auto;
+  margin-right:auto;
+  width: 110px;
+  height: 10px;
+  text-decoration: none;
+  font-size: 14px;
+  font-family: "Avenir Next", "Avenir", sans-serif;
+  white-space: nowrap;
+  color: white;
+  border-radius: 14px 14px 14px 14px;
+  z-index: 100000000001;
+  vertical-align: middle;
+}
+#mySidenav8 a:hover {
+    -webkit-filter: brightness(70%);
+	-moz-filter: brightness(70%);
+	-o-filter: brightness(70%);
+	-ms-filter: brightness(70%);
+	filter: brightness(70%);
+
+}

@@ -1,0 +1,141 @@
+html, body {
+    height: 100%;
+    font-family: 'Lato', Arial, sans-serif;
+}
+
+body {
+    background-image: url("");
+    -webkit-background-size: cover;
+    background-size: cover;
+}
+
+header {
+    z-index: 100000000002;
+    position: fixed;
+    width: 100%;
+    background-color: rgb(0,0,0,0);
+    padding: -2px 0;
+}
+
+header .header-inner {
+    width: 1120px;
+    margin: 0 200px;
+}
+
+header .header-inner a.brand {
+    display: inline-block;
+}
+
+header .header-inner a.brand img {
+    display: block;
+    border-radius: 30px;
+}
+
+header .header-inner .navigation {
+    position: absolute;
+    right: 200px;
+    line-height: 30px;
+}
+
+header .header-inner .navigation a.nav-scroll {
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 100;
+    font-size: 11px;
+    position: relative;
+    display: inline-block;
+    text-decoration: none;
+    color: #000;
+}
+
+header .header-inner .navigation a.nav-scroll::after, header .header-inner .navigation a.nav-scroll::before {
+    display: inline-block;
+    opacity: 0;
+    -webkit-transition: -webkit-transform 0.3s, opacity 0.2s;
+    -moz-transition: -moz-transform 0.3s, opacity 0.2s;
+    transition: transform 0.3s, opacity 0.2s;
+    -webkit-transition: all .3s ease;
+}
+
+header .header-inner .navigation a.nav-scroll::before {
+    margin-left: 10px;
+    color: #000;
+    content: '|';
+    -webkit-transform: translateX(20px);
+    -moz-transform: translateX(20px);
+    transform: translateX(20px);
+}
+
+header .header-inner .navigation a.nav-scroll::after {
+    margin-right: 10px;
+    color: #000;
+    content: '|';
+    -webkit-transform: translateX(-20px);
+    -moz-transform: translateX(-20px);
+    transform: translateX(-20px);
+}
+
+header .header-inner .navigation a.nav-scroll:hover, header .header-inner .navigation a.nav-scroll.active {
+    color: #000;
+}
+
+header .header-inner .navigation a.nav-scroll:hover::after, header .header-inner .navigation a.nav-scroll:hover::before, header .header-inner .navigation a.nav-scroll.active::after, header .header-inner .navigation a.nav-scroll.active::before {
+    isplay: inline-block;
+    opacity: 1;
+    -webkit-transform: translateX(0px);
+    -moz-transform: translateX(0px);
+    transform: translateX(0px);
+}
+
+.contents {
+    height: 100%;
+    text-align: center;
+    position: relative;
+    z-index: 99;
+}
+
+.contents .content {
+    position: absolute;
+    width: 65%;
+    height: 480px;
+    margin: auto;
+    left: 0;
+    top: 90px;
+    right: 0;
+    bottom: 0;
+    opacity: 0;
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+    transition: all .5s ease;
+}
+
+.contents .content small {
+    display: block;
+    margin-top: 40px;
+}
+
+.contents #home {
+    background-color: #a7cb6a;
+}
+
+.contents #about {
+    background-color: #87ab65;
+}
+
+.contents #skills {
+    background-color: #fa67bb;
+}
+
+.contents #blog {
+    background-color: #990bba;
+}
+
+.contents #contact {
+    background-color: #f8fbaa;
+}
+
+.contents .show {
+    opacity: 1;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+}

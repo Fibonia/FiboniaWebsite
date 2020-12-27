@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "fibonia-sql-to-firebase",
+  "private_key_id": "01aee5a9abfbceff1c7172048c9b566369d9af46",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQDpzUksGFMmgozV\nDKpsQuv1CscCnW9BhjCTU4XTB3tr77fCDd802pbwUMWyPyJo+3Lysj2Fd5mHt+C7\npt61omXKsHe+fFrIgMCH8ugH4DqUdXHKQ9a0luIUfG9jiPTLMoP5GiENdzmrxBeg\nB5IioIgVeTd16Wb7vkdXoWEUIy6RmaFL8D8tzNnSQASLWMuQAXBp6f3KsxbHBoCa\neR68iHv3Cg4us63CiulljI/VrXrO3cgQh0O/Ss/bmLW2+kXJMymQLjENtTqn7LyP\nY0Gb1UAgFSfP5+yWel5L58st1KvDjcV/BPux/FKxim0MmIwt8bsJxKzUGTAfcxgJ\ndr7Tv3O/AgMBAAECggEAEgc73LQVeVM4w9bhr05rvm3x0ZBNO2q7BSk8GP0rNbP6\n4fJK41r1p5s621dF8n1tLCy1VLzXsGDr6dxgsPXQTpRT73LMV0iiT/lZjf3q1nbF\n6vhXLn6x+S1tM2okoiSHi6ZJpS2r20RYJAVhbd0eETXTInr4b3IJM0ck4rYhyaU+\nz33OgwrlBiEb6a8QhGwTUiPNDC0XgZ3myWRBq9gBBEtOuVLoKeiTKQKCiOgk7RTW\nQQoCKqP78THUuPWkpOIKIJqNRExypB2fqm0nn1o0AnkSWO7POLDWePrJpoXnHJ2D\ntZtVcOPhLUEi0Vunvq1AE0jP4fWi5piL/NPtI/6/GQKBgQD5ldxRiD2F3XajW+Jr\nBiimuUq29WE1zpMQDw59q8ESVLcaI0AvuE3R3Yzv8nqIzQZ4UYwEP1QeGd3vwFj3\nIfQWCXU9TEfT7M8i5xYlDMr6/MxYJLa9lrD+EbeW0MonlmEC0Kn2JOQGXvXXKK88\nA/PNEUOjQ1Vveb5dHbKDe5BU1wKBgQDvz5QETGgXCe36VbxTV73M2Ftvqi1yTDF2\nZ/Qpju8Iws4AJTQ/G1lUi2JN02j0h1Y30QCbfLbCg/a0sxwfSWsl7uQ4ew11Srev\n/ruYFnumSnbX0w1PWCGQKLK32xNMc6i0PMc5g87qrC2yDnCqfuUYKsMwLa09/Rf3\nAfWGCyoTWQKBgQCYGqB+f80eu+0FeYXvO32iveGuxrRLmm09qC9onze2+DHul/US\nH/wtHhw6T0gl/u0mfmwaWo3lGlaLOmn9ko+yrmjoxogvu24xEywHwFgjxdSzEwzb\nVe7fp+R+4ReSMK9Gi+xIugrNZynjykOhC7eVDiRuZya2HTfKf8K/Jpq7WQKBgQC9\nDBbTjKhCAUHppszfprupUKZEUROilw4nGawRVux5K5jZ5HpbhWPWkkrcr1x96HK/\nbbPc32Pz07QYn1n8EBS3wquHGvpxDIXh6B5att6jKPCnE2nass9CpdK9vaZpDoRg\nEcm8PXxQ44riYx/OSFqxwoQ85sU7qNnLj2/OS97PgQKBgAuIvXu0m2F0mBri/+Oi\nQ/r+KioQ3k8337aU3YfXavmENHzpCLCTsk6QH24ZWJXbjYOO6sGXQtmt4w++BAfx\nFoOsgO9fyqS9yOH/EzBkfC2snS4LQQXFD60iHZSnm3gJ7+3bYs1urI5PRbczay+l\n3J5cduFrXHvgzY3KgivSg/Ki\n-----END PRIVATE KEY-----\n",
+  "client_email": "firebase-adminsdk-jefol@fibonia-sql-to-firebase.iam.gserviceaccount.com",
+  "client_id": "105274954282595473196",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/firebase-adminsdk-jefol%40fibonia-sql-to-firebase.iam.gserviceaccount.com"
+}

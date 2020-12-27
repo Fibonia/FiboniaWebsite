@@ -1,0 +1,81 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700);
+body, html {
+  font-size: 14px;
+  background-color: #F5F5F5;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.topnav {
+  padding: 50px;
+  text-align: center;
+}
+.topnav__title {
+  display: block;
+  color: #77B34D;
+}
+.topnav__link {
+  padding-right: 15px;
+}
+.topnav__description {
+  display: block;
+  margin-top: 40px;
+}
+.topnav__svg {
+  width: 85px;
+}
+
+section {
+  margin-top: 100px;
+}
+
+section:first-of-type {
+  margin-top: 0;
+}
+
+h1, h2, h3, h4, h5 {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
+  color: #70727c;
+}
+
+p, span {
+  font-family: 'Open Sans', sans-serif;
+  color: #747A84;
+}
+
+.header {
+  background-color: #CDE6F4;
+  padding: 50px;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.05);
+  background: url("https://cdn.rawgit.com/arthurleonov/kanokit/master/img/headerimg.jpg") center center no-repeat;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.header__img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  float: right;
+  width: 320px;
+}
+.header__title {
+  font-size: 55px;
+  font-weight: bold;
+  color: #ffffff;
+}
+.header__content {
+  color: #ffffff;
+}
+.header__button {
+  background: none;
+  color: #ffffff;
+  font-weight: bold;
+  margin-top: 30px;
+  border: 1px solid #ffffff;
+  padding: 10px 30px;
+  border-radius: 6px;
+}
+
